@@ -1,0 +1,71 @@
+==============================================
+fold=1	valid=0.0210	test=0.0140
+fold=2	valid=0.0280	test=0.0140
+fold=3	valid=0.0140	test=0.0140
+fold=4	valid=0.0140	test=0.0140
+fold=5	valid=0.0140	test=0.0140
+fold=6	valid=0.0210	test=0.0140
+fold=7	valid=0.0070	test=0.0140
+fold=8	valid=0.0140	test=0.0140
+fold=9	valid=0.0210	test=0.0140
+fold=10	valid=0.0140	test=0.0070
+lambda=0.100	time=9.6570 Min
+Valid	mean=0.0168	std=0.0059
+Test	mean=0.0133	std=0.0022
+==============================================
+fold=1	valid=0.0070	test=0.0070
+fold=2	valid=0.0070	test=0.0070
+fold=3	valid=0.0070	test=0.0070
+fold=4	valid=0.0070	test=0.0070
+fold=5	valid=0.0070	test=0.0070
+fold=6	valid=0.0070	test=0.0070
+fold=7	valid=0.0070	test=0.0070
+fold=8	valid=0.0070	test=0.0070
+fold=9	valid=0.0070	test=0.0070
+fold=10	valid=0.0070	test=0.0070
+lambda=0.200	time=6.0444 Min
+Valid	mean=0.0070	std=0.0000
+Test	mean=0.0070	std=0.0000
+==============================================
+fold=1	valid=0.0070	test=0.0070
+fold=2	valid=0.0070	test=0.0070
+fold=3	valid=0.0070	test=0.0070
+fold=4	valid=0.0070	test=0.0070
+fold=5	valid=0.0070	test=0.0070
+fold=6	valid=0.0070	test=0.0070
+fold=7	valid=0.0070	test=0.0070
+fold=8	valid=0.0070	test=0.0070
+fold=9	valid=0.0070	test=0.0070
+fold=10	valid=0.0070	test=0.0070
+lambda=0.300	time=5.3093 Min
+Valid	mean=0.0070	std=0.0000
+Test	mean=0.0070	std=0.0000
+==============================================
+fold=1	valid=0.0070	test=0.0070
+fold=2	valid=0.0070	test=0.0070
+fold=3	valid=0.0070	test=0.0070
+fold=4	valid=0.0070	test=0.0070
+fold=5	valid=0.0070	test=0.0070
+fold=6	valid=0.0070	test=0.0070
+fold=7	valid=0.0070	test=0.0070
+fold=8	valid=0.0070	test=0.0070
+fold=9	valid=0.0070	test=0.0070
+fold=10	valid=0.0070	test=0.0070
+lambda=0.400	time=6.6437 Min
+Valid	mean=0.0070	std=0.0000
+Test	mean=0.0070	std=0.0000
+==============================================
+fold=1	valid=0.0070	test=0.0070
+fold=2	valid=0.0070	test=0.0070
+fold=3	valid=0.0070	test=0.0070
+fold=4	valid=0.0070	test=0.0070
+fold=5	valid=0.0070	test=0.0070
+fold=6	valid=0.0070	test=0.0070
+fold=7	valid=0.0070	test=0.0070
+fold=8	valid=0.0070	test=0.0070
+fold=9	valid=0.0070	test=0.0070
+fold=10	valid=0.0070	test=0.0070
+lambda=0.500	time=5.3550 Min
+Valid	mean=0.0070	std=0.0000
+Test	mean=0.0070	std=0.0000
+==============================================

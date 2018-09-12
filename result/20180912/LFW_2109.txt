@@ -9,7 +9,7 @@ fold=7	valid=0.5594	test=0.5524
 fold=8	valid=0.5804	test=0.5385
 fold=9	valid=0.5594	test=0.5245
 fold=10	valid=0.5455	test=0.5524
-lambda=0.010	time=24.1319 Min
+lambda=0.010	time=12.3165 Min
 Valid	mean=0.5385	std=0.0545
 Test	mean=0.5497	std=0.0141
 ==============================================
