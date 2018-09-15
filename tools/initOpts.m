@@ -1,16 +1,9 @@
 function opts = initOpts(opts)
-    %% ================== File info ==========================
-    % Author            : Tiep Vu (http://www.personal.psu.edu/thv102/)
-    % Time created      : Wed Jan 27 23:57:31 2016
-    % Last modified     : Wed Jan 27 23:57:32 2016
-    % Description       : 
-    %     INPUT:
-    %
-    %     OUTPUT: 
-    %
-    %% ================== end File info ==========================
+%% =================== Description ============================================
+% Description: init option 
+%% ============================================================================
     %% show, max_iter, checkgrad
-    if ~isfield(opts, 'verbal')
+    if ~isfield(opts, 'verbose')
         opts.verbose = 0;
     end 
     %%

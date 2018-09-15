@@ -1,9 +1,10 @@
 function [D, X] = ODL(Y, k, lambda, opts, method)
+%% ========= Online Dictionary Learning =======================================
 % * Solving the following problem:
 %  (D, X) = \arg\min_{D,X} 0.5||Y - DX||_F^2 + lambda||X||_1
 % * Syntax: `[D, X] = ODL(Y, k, lambda, opts, sc_method)`
 %   - INPUT: 
-%     + `Y`: collection of samples.4/7/2016 7:35:39 PM
+%     + `Y`: collection of samples.
 %     + `k`: number of atoms in the desired dictionary.
 %     + `lambda`: norm 1 regularization parameter.
 %     + `opts`: option.
@@ -12,29 +13,8 @@ function [D, X] = ODL(Y, k, lambda, opts, method)
 %       * `'spams'`: using SPAMS toolbox [[12]](#fn_spams). 
 %   - OUTPUT:
 %     + `D, X`: as in the problem.
-% -----------------------------------------------
-% Author: Tiep Vu, thv102@psu.edu, 4/7/2016
-%         (http://www.personal.psu.edu/thv102/)
-% -----------------------------------------------
-% 	if nargin == 0
-% 		addpath(fullfile('..', 'utils'));
-%         addpath(fullfile('..', 'build_spams'));
-%         d      = 50; % data dimension
-%         N      = 100; % number of samples 
-%         k      = 50; % dictionary size 
-%         lambda = 0.1;
-%         Y      = normc(rand(d, N));        
-%         %
-% 		opts.max_iter      = 500;
-% 		opts.show_progress = 0;
-% 		opts.check_grad    = false;  
-% 		opts.tol           = 1e-8;  
-% 		opts.verbose     = true;
-% 		
-% 	end 
-	%%
+%% ============================================================================
 	opts = initOpts(opts);
-	%%
 	%% ========= initial D ==============================
 	D = PickDfromY(Y, [0, size(Y,2)], k);
     X = zeros(size(D,2), size(Y,2));
@@ -42,10 +22,10 @@ function [D, X] = ODL(Y, k, lambda, opts, method)
         fprintf('cost: %f', ODL_cost(Y, D, X, lambda));
     end 
     optsX = opts;
-	optsX.max_iter = 20;
+	optsX.max_iter = 500;
 	optsX.tol      = 1e-8;
     optsD = opts;
-	optsD.max_iter = 20;
+	optsD.max_iter = 500;
 	optsD.tol      = 1e-8;
 	iter = 0;
 	while iter < opts.max_iter

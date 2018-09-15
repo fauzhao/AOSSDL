@@ -1,10 +1,12 @@
 function [fid]=getFid(datasetName)
+%% =================== Description ============================================
 % Input:
 %		datasetName: e.g. LFW denotes the LFW face datasetName
 % Output:
 %		fid: result file's handler
 % Description:
 %		return a result file handler
+%% ============================================================================
 %% use different delimiter under different os
 [status, ~]=system('systeminfo'); 
 if status==0 
