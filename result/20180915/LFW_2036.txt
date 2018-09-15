@@ -1,0 +1,15 @@
+==============================================
+fold=1	valid=0.4056	test=0.4056
+fold=2	valid=0.4056	test=0.3566
+fold=3	valid=0.3986	test=0.4266
+fold=4	valid=0.3427	test=0.4476
+fold=5	valid=0.3846	test=0.4336
+fold=6	valid=0.4056	test=0.3776
+fold=7	valid=0.3357	test=0.3916
+fold=8	valid=0.3916	test=0.3706
+fold=9	valid=0.4336	test=0.4336
+fold=10	valid=0.3776	test=0.3497
+lambda=0.010	atomNum=$d	?=116.0000 Min
+ime=15.953	Valid	mean=0.3881	std=0.0299
+Test	mean=0.3993	std=0.0351
+==============================================

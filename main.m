@@ -29,8 +29,9 @@ for lambda = 0.01%[0.01 0.05 0.1 0.2 0.3 0.4 0.5]
 		opts.check_grad = false;
         train_x = cv(fold).train_x;
         train_y = cv(fold).train_y;
-        k = size(train_x, 2);
-        [D, X] = ODL(train_x, k, opts.lambda, opts, opts.method);
+%         atomNum = size(train_x, 2);
+        atomNum = 600;
+        [D, X] = ODL(train_x, atomNum, opts.lambda, opts, opts.method);
         fprintf(2,['Time=',num2str(toc/60),' Min','\n']);
         %% testing
         fprintf(['==============  Testing   =====================', '\n']);
@@ -49,7 +50,7 @@ for lambda = 0.01%[0.01 0.05 0.1 0.2 0.3 0.4 0.5]
         fprintf(fid,'%s=%.4f\n','test',testAcc(fold));
         fprintf(2,['Time=',num2str(toc/60),' Min','\n']);
     end
-    fprintf(fid,'%s=%.3f\t%s=%.4f Min\n','lambda',opts.lambda,'time',etime(clock,t1)/60);
+    fprintf(fid,'%s=%.3f\t%s=$d\t%s=%.4f Min\n','lambda',opts.lambda,'atomNum',atomNum,'time',etime(clock,t1)/60);
     fprintf(fid,'Valid\t%s=%.4f\t%s=%.4f','mean',mean(validAcc),'std',std(validAcc));
     fprintf(fid,'\nTest\t%s=%.4f\t%s=%.4f\n','mean',mean(testAcc),'std',std(testAcc));
     fprintf(fid,'%s\n','==============================================');
