@@ -20,7 +20,8 @@ resultFolder = char(['result',delimiter,sprintf('%02d',now(:,1:3))]);
 if ~exist(resultFolder,'dir')
     mkdir(resultFolder);
 end
-resultFile = char(join([resultFolder,delimiter,datasetName,'_',sprintf('%02d',now(:,4:5)),'.txt'],''));
+% resultFile = char(join([resultFolder,delimiter,datasetName,'_',sprintf('%02d',now(:,4:5)),'.txt'],''));
+resultFile = [resultFolder,delimiter,datasetName,'_',sprintf('%02d',now(:,4:5)),'.txt'];
 if ~exist(resultFile,'file')
     fid = fopen(resultFile,'a');
     fprintf(fid,'%s\n','==============================================');
