@@ -3,6 +3,7 @@
 
 # 说明
 结合主动学习与在线字典学习技术的图像分类方法。
+![framework pipeline](docs/framework.png)
 
 # 项目说明
 
