@@ -2,13 +2,9 @@
 20180911
 
 # 说明
-结合主动学习与在线字典学习技术的图像分类方法,目标数据集:Alzheimer's disease.
+结合主动学习与在线字典学习技术的图像分类方法。
 
 # 项目说明
-## 分支
-### v0.0.1(ODL)
-存放关于[Online Dictionary Learning for Sparse Coding,Mairal,2009]()的实现代码。
-- k为预设的字典原子数目
 
 ## 文件结构
 - data: 存放数据集相关文件夹.
